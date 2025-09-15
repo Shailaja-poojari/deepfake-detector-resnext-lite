@@ -1,0 +1,1 @@
+# Placeholder for MediaPipe-based face detector

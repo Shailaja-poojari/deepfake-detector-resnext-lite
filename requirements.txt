@@ -1,0 +1,6 @@
+torch
+torchvision
+mediapipe
+gradi
+opencv-python
+numpy
