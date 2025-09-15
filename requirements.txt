@@ -1,6 +1,6 @@
 torch
 torchvision
 mediapipe
-gradi
+gradio
 opencv-python
 numpy
