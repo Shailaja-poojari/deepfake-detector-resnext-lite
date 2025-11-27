@@ -1,31 +1,17 @@
-"""
-ResNeXt Lite model definition for Deepfake Detection.
-"""
-
 import torch
 import torch.nn as nn
+import torchvision.models as models
 
 class ResNeXtLite(nn.Module):
-    """
-    A lightweight ResNeXt model for deepfake detection.
-    """
-
-    def __init__(self, num_classes: int = 2):
+    def __init__(self, num_classes=2):
         super(ResNeXtLite, self).__init__()
+        
+        # Load pretrained ResNeXt model
+        self.base = models.resnext50_32x4d(weights='DEFAULT')
+        
+        # Replace head to output 2 classes (real/fake)
+        in_features = self.base.fc.in_features
+        self.base.fc = nn.Linear(in_features, num_classes)
 
-        # Example simple ResNeXt-like block (replace with actual architecture if needed)
-        self.features = nn.Sequential(
-            nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3),
-            nn.BatchNorm2d(64),
-            nn.ReLU(inplace=True),
-            nn.MaxPool2d(3, stride=2, padding=1)
-            # Add more layers as required
-        )
-
-        self.classifier = nn.Linear(64, num_classes)
-
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
-        x = self.features(x)
-        x = torch.flatten(x, 1)
-        x = self.classifier(x)
-        return x
+    def forward(self, x):
+        return self.base(x)
