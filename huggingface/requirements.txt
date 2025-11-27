@@ -1,0 +1,8 @@
+gradio
+torch
+torchvision
+opencv-python-headless
+numpy
+librosa
+scipy
+fpdf
