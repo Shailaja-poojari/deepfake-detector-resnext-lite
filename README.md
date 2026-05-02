@@ -90,22 +90,37 @@ Run locally:
 ```bash
 pip install -r requirements.txt
 python app.py
+
+---
+
 🐳 Docker Setup
 docker build -t deepfake-detector .
 docker run -p 8000:8000 deepfake-detector
+
+---
+
 📌 Challenges & Improvements
 Challenges:
 Handling temporal inconsistencies across frames
 Balancing model accuracy with computational efficiency
 Dataset quality and variability
+
+---
+
 Future Improvements:
 Integrate transformer-based architectures
 Deploy via Hugging Face / cloud APIs
 Improve robustness on low-quality videos
+
+---
+
 🌍 Real-World Use Cases
 Social media content verification
 Fraud detection in video-based systems
 Media authenticity validation platforms
+
+---
+
 👩‍💻 Author
 
 Shailaja Poojary
