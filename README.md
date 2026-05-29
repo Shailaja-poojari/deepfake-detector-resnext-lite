@@ -6,7 +6,7 @@ This project leverages a ResNeXt-based architecture for spatial feature extracti
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 Deepfake media poses a growing threat in digital ecosystems, including misinformation, fraud, and identity misuse.
 
@@ -18,18 +18,18 @@ This project aims to build a **scalable, efficient, and accurate deepfake detect
 
 ---
 
-## 🧠 Key Features
+##  Key Features
 
-- 🔍 **ResNeXt Lite Backbone** for efficient feature extraction
-- 🎥 **Temporal Analysis Module** for detecting frame inconsistencies
-- ⚡ **Optimized for Fast Inference** (lightweight architecture)
-- 🧩 Modular and scalable project structure
-- 🐳 Docker-ready setup for deployment
-- 📊 Training and evaluation pipelines included
+-  **ResNeXt Lite Backbone** for efficient feature extraction
+-  **Temporal Analysis Module** for detecting frame inconsistencies
+-  **Optimized for Fast Inference** (lightweight architecture)
+-  **Modular and scalable project structure**
+-  **Docker-ready setup for deployment**
+-  **Training and evaluation pipelines included**
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 - **Input** → Video / Image frames  
 - **Preprocessing** → Frame extraction + normalization  
@@ -39,7 +39,7 @@ This project aims to build a **scalable, efficient, and accurate deepfake detect
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Python
 - PyTorch
@@ -66,7 +66,7 @@ deepfake-detector-resnext-lite/
 
 ---
 
-## 🧪 Model Training
+##  Model Training
 
 - Training conducted using **Google Colab (GPU environment)**
 - Dataset preprocessed with frame extraction techniques
@@ -83,7 +83,7 @@ deepfake-detector-resnext-lite/
 
 ---
 
-## ⚡ Inference
+##  Inference
 
 Run locally:
 
@@ -99,7 +99,8 @@ docker run -p 8000:8000 deepfake-detector
 
 ---
 
-📌 Challenges & Improvements
+Challenges & Improvements
+
 Challenges:
 Handling temporal inconsistencies across frames
 Balancing model accuracy with computational efficiency
@@ -114,7 +115,7 @@ Improve robustness on low-quality videos
 
 ---
 
-🌍 Real-World Use Cases
+Real-World Use Cases:
 Social media content verification
 Fraud detection in video-based systems
 Media authenticity validation platforms
