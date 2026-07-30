@@ -119,7 +119,4 @@ Social media content verification
 Fraud detection in video-based systems
 Media authenticity validation platforms
 
----
 
-Author
-Shailaja Poojary
