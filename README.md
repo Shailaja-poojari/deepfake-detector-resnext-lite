@@ -49,20 +49,19 @@ This project aims to build a **scalable, efficient, and accurate deepfake detect
 
 ---
 
-## ⚙️ Project Structure
+## Project Structure
 
-
+```text
 deepfake-detector-resnext-lite/
-│
-├── app/ # Inference app
-├── src/ # Core model architecture
-├── notebooks/ # Training & experimentation (Colab)
-├── tests/ # Testing scripts
-├── docker/ # Docker configuration
-├── requirements.txt
-├── app.py # Entry point
-└── environment.yml
-
+├── app/                 # Inference application
+├── src/                 # Core model architecture and utilities
+├── notebooks/           # Training and experimentation notebooks
+├── tests/               # Unit and inference tests
+├── docker/              # Docker configuration files
+├── requirements.txt     # Python dependencies
+├── environment.yml      # Conda environment configuration
+└── app.py               # Application entry point
+```
 
 ---
 
@@ -75,7 +74,7 @@ deepfake-detector-resnext-lite/
 
 ---
 
-## 📈 Results
+##  Results
 
 - Achieved ~90%+ classification accuracy on validation data
 - Reduced model size compared to standard CNN architectures
@@ -122,6 +121,5 @@ Media authenticity validation platforms
 
 ---
 
-👩‍💻 Author
-
+Author
 Shailaja Poojary
