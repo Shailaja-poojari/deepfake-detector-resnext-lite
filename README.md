@@ -1,4 +1,4 @@
-# DeepFake Detection System — ResNeXt Lite + Temporal Modeling
+# DeepFake Detection System - ResNeXt Lite + Temporal Modeling
 
 A lightweight and efficient deepfake detection system designed for high-speed inference and real-world deployment scenarios.
 
